@@ -5,5 +5,5 @@ Made for learning purposes only.
 
 ### Screenshot
 <p align="center">
-  <img src="https://i.ibb.co/PYgrjWT/2048screenshot.png" alt="Screenshot" height="500"/>
+  <img src="https://i.ibb.co/PYgrjWT/2048screenshot.png" alt="Screenshot" height="600"/>
 </p>
