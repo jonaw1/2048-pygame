@@ -154,3 +154,13 @@ def button_hovered(btn_pos):
     collide_x = btn_pos[0][0] <= mouse_pos[0] <= btn_pos[0][1]
     collide_y = btn_pos[1][0] <= mouse_pos[1] <= btn_pos[1][1]
     return collide_x and collide_y
+
+def shorten(n):
+    """Shortens an integer to max 9 digits using scientific notation."""
+    e = 0
+    display = str(n)
+    while len(display) > 9:
+        n //= 10
+        e += 1
+        display = f"{n}e{e}"
+    return display

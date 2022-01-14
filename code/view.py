@@ -94,7 +94,8 @@ class View:
         # Param which is used to differentiate between normal score
         # (which == 0) and high score (which == 1).
         offset_x = 5 if which == 0 else 200
-        score_surface = self.font.render(str(score), False, View.WHITE)
+        score_str = logic.shorten(score)
+        score_surface = self.font.render(score_str, False, View.WHITE)
         score_x = 190 / 2 - score_surface.get_rect().width / 2 + offset_x
         self.screen.blit(score_surface, (score_x, 25))
 
