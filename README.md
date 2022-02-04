@@ -1,4 +1,4 @@
-# 2048
+# 2048-pygame
 A small Pygame clone of [Gabriele Cirulli's 2048](https://github.com/gabrielecirulli/2048).
 
 Made for learning purposes only.
