@@ -3,6 +3,7 @@
 import copy
 import random
 import pygame as pg
+import os
 
 
 def merge(line, game=None):
@@ -118,7 +119,7 @@ def save_score(score):
 
 
 def read_score():
-    f = open("high_score.txt")
+    f = open(os.path.join("..", "high_score.txt"))
     score = int(f.read())
     f.close()
     return score
@@ -154,6 +155,7 @@ def button_hovered(btn_pos):
     collide_x = btn_pos[0][0] <= mouse_pos[0] <= btn_pos[0][1]
     collide_y = btn_pos[1][0] <= mouse_pos[1] <= btn_pos[1][1]
     return collide_x and collide_y
+
 
 def shorten(n):
     """Shortens an integer to max 9 digits using scientific notation."""
