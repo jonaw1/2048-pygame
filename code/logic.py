@@ -119,7 +119,7 @@ def save_score(score):
 
 
 def read_score():
-    f = open(os.path.join("..", "high_score.txt"))
+    f = open(os.path.join("high_score.txt"))
     score = int(f.read())
     f.close()
     return score
