@@ -15,7 +15,7 @@ def merge(line, game=None):
             if last_num is None:
                 last_num = num
             elif num == last_num:
-                # Merge 2 x 131072 into 2, just for fun
+                # Merge 2 x 131072 into 2, just for fun.
                 new_num = 2 if last_num == 131072 else last_num * 2
                 merged.append(new_num)
                 if game:
